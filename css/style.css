@@ -245,6 +245,12 @@ input[type="checkbox"], input[type="radio"] {
 body {
   font-family: "Space Mono", monospace;
   height: 100vh;
+  background-color: #F2F2F2;
+}
+
+.body-bg-dark {
+  background-color: #141D2F;
+  color: #fff;
 }
 
 .wrapper {
@@ -253,16 +259,13 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 730px;
   height: 611px;
   margin: 80px auto;
-  background-color: coral;
 }
 
 @media screen and (max-width: 767px) {
@@ -277,5 +280,79 @@ body {
     width: 573px;
     height: 648px;
   }
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+.top-bar .logo {
+  margin: 0;
+  color: #222731;
+}
+
+.top-bar .logo-dark {
+  color: #FFF;
+}
+
+.top-bar .switch-mode-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  border: none;
+  background-color: inherit;
+  color: #697C9A;
+}
+
+.top-bar .switch-mode-btn-dark {
+  color: #FFF;
+}
+
+.top-bar .switch-mode-btn .mode-icon {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .top-bar .logo {
+    font-size: 26px;
+  }
+}
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.search .username {
+  width: 100%;
+  padding: 15px;
+}
+
+.search .search-btn {
+  position: absolute;
+  right: 10px;
+  top: 10%;
+  height: 80%;
 }
 /*# sourceMappingURL=style.css.map */

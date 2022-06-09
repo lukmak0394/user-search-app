@@ -6,15 +6,21 @@
 body {
     font-family: $font-stack;
     height: 100vh;
+    background-color: $bg-light;
 }
+
+.body-bg-dark {
+    background-color: $bg-dark;
+    color: #fff;
+}
+
 
 .wrapper {
     @include flexbox;
-    @include flex-center; 
+    flex-direction: column; 
     max-width: 730px;
     height: 611px;
     margin: 80px auto;
-    background-color: coral;
 
     @media screen and (max-width: 767px) {
         width: 90%;
@@ -26,3 +32,4 @@ body {
         height: 648px;
     }
 }
+

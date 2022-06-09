@@ -1,0 +1,44 @@
+.top-bar {
+    @include flexbox;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+
+    .logo {
+        margin: 0;
+        color: #222731;
+
+        &-dark {
+            color: #FFF;
+        }
+
+    }
+
+    .switch-mode-btn {
+        @include flexbox;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        border: none;
+        background-color: inherit;
+        color: #697C9A;
+
+        &-dark {
+            color: #FFF;
+        }
+    
+        .mode-icon {
+            margin-left: 10px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .logo {
+            font-size: 26px;
+        }
+    }
+}
+
