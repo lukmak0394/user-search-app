@@ -235,4 +235,47 @@ input[type="checkbox"], input[type="radio"] {
           box-sizing: border-box;
   padding: 0;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  height: 100vh;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 730px;
+  height: 611px;
+  margin: 80px auto;
+  background-color: coral;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper {
+    margin: 140px auto;
+    width: 573px;
+    height: 648px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

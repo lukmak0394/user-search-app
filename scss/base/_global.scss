@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+body {
+    font-family: $font-stack;
+    height: 100vh;
+}
+
+.wrapper {
+    @include flexbox;
+    @include flex-center; 
+    max-width: 730px;
+    height: 611px;
+    margin: 80px auto;
+    background-color: coral;
+
+    @media screen and (max-width: 767px) {
+        width: 90%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin: 140px auto;
+        width: 573px;
+        height: 648px;
+    }
+}
