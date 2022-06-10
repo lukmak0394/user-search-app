@@ -18,8 +18,22 @@
       <button class="switch-mode-btn">Dark<img src="assets/icon-moon.svg" alt="icon-moon" class="mode-icon"></button>
     </div>
     <div class="search">
-      <input type="text" name="username" id="username" class="username" placeholder="Search GitHub username...">
+      <input type="text" name="username" id="username" class="username" placeholder="Find username">
+      <img src="assets/icon-search.svg" alt="icon-search" class="icon-search">
+      <span class="error-msg">No results</span>
       <button class="search-btn">Search</button>
+    </div>
+    <div class="output-wrapper">
+      <div class="basic-info-wrapper">
+        <img src="https://avatars.githubusercontent.com/u/58666224?v=4" alt="user-avatar" class="avatar">
+        <div class="basic-info">
+          <h1 class="login">Username</h1>
+          <p class="created-at">Joined 25 Jan 2011</p>
+          <a href="#" class="user-link">@username</a>
+        </div>
+        <div class="bio">Lorem idivsum dolor sit amet consectetur adipisicing elit. Illo, doloribus?</div>
+      </div>      
+      
     </div>
   </div>
   <!-- devfinder
@@ -37,5 +51,7 @@
   Following -->
 
   <script src="js/main.js"></script>
+  <script src="js/github.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

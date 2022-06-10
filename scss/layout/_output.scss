@@ -1,0 +1,119 @@
+.output-wrapper {
+    @include flexbox;
+    margin-top: 15px;
+    padding: 0 20px;
+    background-color: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+
+    &-dark {
+        background-color: #1E2A47;
+    }
+
+
+    .basic-info-wrapper {
+        @include flexbox;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        padding: 15px;
+       
+        .avatar {
+            width: 117px;
+            height: 117px;
+            border-radius: 50%;
+        }
+
+        .basic-info {
+            @include flexbox;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 80px;
+
+            .login {
+                color: #2B3442;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 39px;
+
+                &-dark {
+                    color: #FFF;
+                }
+
+            }
+    
+            .user-link {    
+                color: #0079FF;
+                font-size: 16px;
+                line-height: 24px;
+                width: 100%;
+            }
+    
+            .created-at {
+                color: #697C9A;
+                font-size: 15px;
+                line-height: 22px;
+
+                &-dark {
+                    color: #FFF;
+                }
+
+            }
+
+            .login,
+            .created-at {
+                margin: 0;
+            }
+
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                margin: 0;
+
+                .login,
+                .created-at {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .bio {
+            margin-top: 25px;
+            color: #4B6A9B;
+            font-size: 15px;
+            line-height: 25px;
+            opacity: 0.75; 
+
+            &-dark {
+                color: #FFF;
+            }
+            
+        }
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+
+            .avatar {
+                margin: 30px 0;
+            }
+
+            .bio {
+                text-align: center;
+            }
+
+            
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 70%;
+
+    }
+
+}
