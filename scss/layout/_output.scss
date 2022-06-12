@@ -10,6 +10,12 @@
         background-color: #1E2A47;
     }
 
+    .preloader {
+        margin: auto;
+        width: 100px;
+        height: 100px;
+    }
+
 
     .basic-info-wrapper {
         @include flexbox;
@@ -28,7 +34,9 @@
             @include flexbox;
             justify-content: space-between;
             align-items: center;
-            margin-left: 80px;
+            width: calc(100% - 117px);
+            padding: 0 20px;
+            // margin-left: auto;
 
             .login {
                 color: #2B3442;
@@ -85,6 +93,7 @@
             font-size: 15px;
             line-height: 25px;
             opacity: 0.75; 
+            width: 100%;
 
             &-dark {
                 color: #FFF;
