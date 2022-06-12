@@ -26,7 +26,21 @@ const createContent = (userData) => {
             <p class="stat followers">Followers<br><span class="stat-number">${userData.followers}</span></p>
             <p class="stat following">Following<br><span class="stat-number">${userData.following}</span></p>
         </div> 
-        
+        <div class="aside-info">
+        <p class="info location">
+          <img src="/assets/icon-location.svg" alt="location-icon" class="icon">${userData.location ? userData.location : '<span class="not-available">Not Available</span>'}
+        </p>
+        <a href="https://twitter.com/${userData.twitter_username}" class="info twitter">
+          <img src="/assets/icon-twitter.svg" alt="twitter-icon" class="icon">${userData.twitter_username ? userData.twitter_username : '<span class="not-available">Not Available</span>'}
+        </a>
+        <a href="${userData.blog}" class="info blog">
+          <img src="/assets/icon-website.svg" alt="blog-icon" class="icon">${userData.blog ? userData.blog : '<span class="not-available">Not Available</span>'}
+        </a>
+        <p href="#" class="info company">
+          <img src="/assets/icon-company.svg" alt="location-company" class="icon">${userData.company ? userData.company : '<span class="not-available">Not Available</span>'}
+        </p>
+      </div>
+    </div> 
         
     `;
 }

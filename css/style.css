@@ -648,6 +648,22 @@ a {
   margin-right: 8px;
 }
 
+.output-wrapper .aside-info .info .not-available {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+  .output-wrapper .aside-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .output-wrapper .aside-info .info {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .output-wrapper {
     -webkit-box-orient: horizontal;

@@ -135,9 +135,22 @@
             margin: 0;
             padding: 10px 0;
     
-            .icon {
-                margin-right: 8px;     
+            .icon{
+                margin-right: 8px;
             }
+
+            .not-available  {
+                opacity: 0.5;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+
+            .info {
+                width: 100%;
+            }
+
         }
     
     }
