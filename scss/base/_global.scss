@@ -1,5 +1,4 @@
 
-
 * {
     box-sizing: border-box;
     overflow: auto;
@@ -11,15 +10,69 @@ body {
     background-color: $bg-light;
 }
 
-.body-bg-dark {
+
+// Defined dark mode color scheme:
+.dark-mode {
     background-color: $bg-dark;
-    color: #fff;
+    color: #FFF;
+
+    .wrapper {
+
+        .top-bar {
+
+            .logo,
+            .switch-mode-btn {
+                color: #FFF;
+            }
+
+        }
+
+        .username {
+            background-color: #1E2A47;
+            color: #FFF;
+        }
+
+        .output-wrapper {
+            background-color: #1E2A47;
+
+            .basic-info-wrapper {
+
+                .basic-info {
+
+                    .login,
+                    .created-at {
+                        color: #FFF;
+                    }
+
+                }
+
+                .bio {
+                    color: #FFF;
+                }
+                
+            }
+
+            .stats {
+                background-color: #141D2F;
+                
+                .stat {
+                    color: #FFF;
+
+                    .stat-number {
+                        color: #FFF;
+                    }
+                }
+
+            }
+
+        }
+
+    }
 }
 
 .no-show {
     display: none;
 }
-
 
 .wrapper {
     @include flexbox;

@@ -6,10 +6,6 @@
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
     border-radius: 15px;
 
-    &-dark {
-        background-color: #1E2A47;
-    }
-
     .preloader {
         margin: auto;
         width: 100px;
@@ -36,18 +32,12 @@
             align-items: center;
             width: calc(100% - 117px);
             padding: 0 20px;
-            // margin-left: auto;
 
             .login {
                 color: #2B3442;
                 font-weight: 700;
                 font-size: 26px;
                 line-height: 39px;
-
-                &-dark {
-                    color: #FFF;
-                }
-
             }
     
             .user-link {    
@@ -61,11 +51,6 @@
                 color: #697C9A;
                 font-size: 15px;
                 line-height: 22px;
-
-                &-dark {
-                    color: #FFF;
-                }
-
             }
 
             .login,
@@ -94,11 +79,6 @@
             line-height: 25px;
             opacity: 0.75; 
             width: 100%;
-
-            &-dark {
-                color: #FFF;
-            }
-            
         }
 
         @media screen and (max-width: 992px) {
@@ -111,10 +91,31 @@
             .bio {
                 text-align: center;
             }
-
-            
         }
 
+    }
+
+    .stats {
+        @include flexbox;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+        background-color: #F6F8FF;
+        border-radius: 10px;
+
+        .stat {
+            color: #4B6A9B;
+            font-size: 15px;
+
+            .stat-number {
+                color: #2B3442;
+                font-weight: 700;
+                font-size: 22px;
+
+            }
+
+        }
     }
 
     @media screen and (max-width: 767px) {

@@ -248,9 +248,44 @@ body {
   background-color: #F2F2F2;
 }
 
-.body-bg-dark {
+.dark-mode {
   background-color: #141D2F;
-  color: #fff;
+  color: #FFF;
+}
+
+.dark-mode .wrapper .top-bar .logo,
+.dark-mode .wrapper .top-bar .switch-mode-btn {
+  color: #FFF;
+}
+
+.dark-mode .wrapper .username {
+  background-color: #1E2A47;
+  color: #FFF;
+}
+
+.dark-mode .wrapper .output-wrapper {
+  background-color: #1E2A47;
+}
+
+.dark-mode .wrapper .output-wrapper .basic-info-wrapper .basic-info .login,
+.dark-mode .wrapper .output-wrapper .basic-info-wrapper .basic-info .created-at {
+  color: #FFF;
+}
+
+.dark-mode .wrapper .output-wrapper .basic-info-wrapper .bio {
+  color: #FFF;
+}
+
+.dark-mode .wrapper .output-wrapper .stats {
+  background-color: #141D2F;
+}
+
+.dark-mode .wrapper .output-wrapper .stats .stat {
+  color: #FFF;
+}
+
+.dark-mode .wrapper .output-wrapper .stats .stat .stat-number {
+  color: #FFF;
 }
 
 .no-show {
@@ -296,10 +331,6 @@ body {
 .top-bar .logo {
   margin: 0;
   color: #222731;
-}
-
-.top-bar .logo-dark {
-  color: #FFF;
 }
 
 .top-bar .switch-mode-btn {
@@ -350,11 +381,6 @@ body {
   border: none;
   -webkit-box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
           box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
-}
-
-.search .username-dark {
-  background-color: #1E2A47;
-  color: #FFF;
 }
 
 .search .username:focus {
@@ -442,10 +468,6 @@ body {
   border-radius: 15px;
 }
 
-.output-wrapper-dark {
-  background-color: #1E2A47;
-}
-
 .output-wrapper .preloader {
   margin: auto;
   width: 100px;
@@ -495,10 +517,6 @@ body {
   line-height: 39px;
 }
 
-.output-wrapper .basic-info-wrapper .basic-info .login-dark {
-  color: #FFF;
-}
-
 .output-wrapper .basic-info-wrapper .basic-info .user-link {
   color: #0079FF;
   font-size: 16px;
@@ -510,10 +528,6 @@ body {
   color: #697C9A;
   font-size: 15px;
   line-height: 22px;
-}
-
-.output-wrapper .basic-info-wrapper .basic-info .created-at-dark {
-  color: #FFF;
 }
 
 .output-wrapper .basic-info-wrapper .basic-info .login,
@@ -545,10 +559,6 @@ body {
   width: 100%;
 }
 
-.output-wrapper .basic-info-wrapper .bio-dark {
-  color: #FFF;
-}
-
 @media screen and (max-width: 992px) {
   .output-wrapper .basic-info-wrapper {
     -webkit-box-orient: vertical;
@@ -562,6 +572,33 @@ body {
   .output-wrapper .basic-info-wrapper .bio {
     text-align: center;
   }
+}
+
+.output-wrapper .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  background-color: #F6F8FF;
+  border-radius: 10px;
+}
+
+.output-wrapper .stats .stat {
+  color: #4B6A9B;
+  font-size: 15px;
+}
+
+.output-wrapper .stats .stat .stat-number {
+  color: #2B3442;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 @media screen and (max-width: 767px) {
