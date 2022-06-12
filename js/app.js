@@ -1,8 +1,10 @@
 export {createContent}
 
 const searchBtn = document.querySelector('.search-btn');
+const username = document.querySelector('.username');
 const errorMsg = document.querySelector('.error-msg');
 const output = document.querySelector('.output-wrapper');
+
 
 const preloader = () => {
     output.innerHTML = '<img src="./assets/preloader.gif" alt="preloader" class="preloader">';
@@ -24,6 +26,8 @@ const createContent = (userData) => {
             <p class="stat followers">Followers<br><span class="stat-number">${userData.followers}</span></p>
             <p class="stat following">Following<br><span class="stat-number">${userData.following}</span></p>
         </div> 
+        
+        
     `;
 }
 
@@ -46,14 +50,12 @@ const getData = () => {
         output.innerHTML = `<p>Couldn't load user data</p>`;
     })
 
-    
-
 }
 
 searchBtn.addEventListener('click',() => {
     if (username.value !== '') {
-        preloader()
-        setTimeout(getData,2000)
+        preloader();
+        setTimeout(getData,2000);
     }
 })
 

@@ -14,15 +14,15 @@ window.onload = () => {
         switchBtn.innerHTML = 'light <img src="assets/icon-sun.svg" alt="icon-sun" class="mode-icon">';
     } 
 
-    fetch(`https://api.github.com/users/octocat`)
-    .then (res => res.json())
-    .then (data => {
-        createContent(data)
-    })
-    .catch(error => {
-        console.log(error)
-        document.querySelector('.output-wrapper').innerHTML = `<p>Couldn't load user data</p>`;
-    })
+    // fetch(`https://api.github.com/users/octocat`)
+    // .then (res => res.json())
+    // .then (data => {
+    //     createContent(data)
+    // })
+    // .catch(error => {
+    //     console.log(error)
+    //     document.querySelector('.output-wrapper').innerHTML = `<p>Couldn't load user data</p>`;
+    // })
 }
 
 const toggleClasses = () => {

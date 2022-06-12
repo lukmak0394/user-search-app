@@ -10,6 +10,9 @@ body {
     background-color: $bg-light;
 }
 
+a {
+    text-decoration: none;
+}
 
 // Defined dark mode color scheme:
 .dark-mode {
@@ -63,6 +66,14 @@ body {
                     }
                 }
 
+            }
+
+            .aside-info {
+
+                .info {
+                    color: #FFF;
+                    
+                }
             }
 
         }
