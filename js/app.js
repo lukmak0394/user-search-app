@@ -5,7 +5,7 @@ const errorMsg = document.querySelector('.error-msg');
 const output = document.querySelector('.output-wrapper');
 
 const preloader = () => {
-    output.innerHTML = '<img src="../assets/preloader.gif" alt="preloader" class="preloader">';
+    output.innerHTML = '<img src="./assets/preloader.gif" alt="preloader" class="preloader">';
 }
 
 const createContent = (userData) => {
