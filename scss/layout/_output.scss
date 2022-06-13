@@ -135,8 +135,9 @@
             margin: 0;
             padding: 10px 0;
     
-            .icon{
+            .icon {
                 margin-right: 8px;
+                filter: invert(38%) sepia(96%) saturate(265%) hue-rotate(175deg) brightness(87%) contrast(87%);
             }
 
             .not-available  {
