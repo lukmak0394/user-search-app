@@ -28,6 +28,7 @@ const createContent = (userData) => {
         </div> 
         <div class="aside-info">
         <p class="info location">
+<<<<<<< HEAD
           <img src="/assets/icon-location.svg" alt="location-icon" class="icon ${userData.location ? true : 'not-available'}">${userData.location ? userData.location : '<span class="not-available">Not Available</span>'}
         </p>
         <a href="https://twitter.com/${userData.twitter_username}" class="info twitter">
@@ -38,6 +39,18 @@ const createContent = (userData) => {
         </a>
         <p class="info company">
           <img src="/assets/icon-company.svg" alt="location-company" class="icon ${userData.company ? true : 'not-available'}">${userData.company ? userData.company : '<span class="not-available">Not Available</span>'}
+=======
+          <img src="./assets/icon-location.svg" alt="location-icon" class="icon">${userData.location ? userData.location : '<span class="not-available">Not Available</span>'}
+        </p>
+        <a href="https://twitter.com/${userData.twitter_username}" class="info twitter">
+          <img src="./assets/icon-twitter.svg" alt="twitter-icon" class="icon">${userData.twitter_username ? userData.twitter_username : '<span class="not-available">Not Available</span>'}
+        </a>
+        <a href="${userData.blog}" class="info blog">
+          <img src="./assets/icon-website.svg" alt="blog-icon" class="icon">${userData.blog ? userData.blog : '<span class="not-available">Not Available</span>'}
+        </a>
+        <p href="#" class="info company">
+          <img src="./assets/icon-company.svg" alt="location-company" class="icon">${userData.company ? userData.company : '<span class="not-available">Not Available</span>'}
+>>>>>>> 6e232aeb1f37967afd8a4b886ac1a3ce854c4c25
         </p>
       </div>
     </div> 
