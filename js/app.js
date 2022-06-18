@@ -19,14 +19,14 @@ const createContent = (userData) => {
                 <p class="created-at">Joined at ${new Date(userData.created_at).toLocaleDateString()}</p>
                 <a href="${userData.html_url}" target="_blank" class="user-link">@${userData.login}</a>
             </div>
-                <div class="bio">${userData.bio ? userData.bio : 'This profile has no bio'}</div>
+            <div class="bio">${userData.bio ? userData.bio : 'This profile has no bio'}</div>
         </div>
         <div class="stats">
             <p class="stat repos">Repos<br><span class="stat-number">${userData.public_repos}</span></p>
             <p class="stat followers">Followers<br><span class="stat-number">${userData.followers}</span></p>
             <p class="stat following">Following<br><span class="stat-number">${userData.following}</span></p>
         </div> 
-        <div class="aside-info">
+        <div class="social-info-wrapper">
         <p class="info location">
           <img src="./assets/icon-location.svg" alt="location-icon" class="icon ${userData.location ? true : 'not-available'}">${userData.location ? userData.location : '<span class="not-available">Not Available</span>'}
         </p>
