@@ -257,46 +257,46 @@ a {
   color: #FFF;
 }
 
-.dark-mode .wrapper .top-bar .logo,
-.dark-mode .wrapper .top-bar .switch-mode-btn {
+.dark-mode .main-wrapper .top-bar .logo,
+.dark-mode .main-wrapper .top-bar .switch-mode-btn {
   color: #FFF;
 }
 
-.dark-mode .wrapper .username {
+.dark-mode .main-wrapper .username {
   background-color: #1E2A47;
   color: #FFF;
 }
 
-.dark-mode .wrapper .output-wrapper {
+.dark-mode .main-wrapper .output-wrapper {
   background-color: #1E2A47;
 }
 
-.dark-mode .wrapper .output-wrapper .basic-info-wrapper .basic-info .login,
-.dark-mode .wrapper .output-wrapper .basic-info-wrapper .basic-info .created-at {
+.dark-mode .main-wrapper .output-wrapper .basic-info-wrapper .basic-info .login,
+.dark-mode .main-wrapper .output-wrapper .basic-info-wrapper .basic-info .created-at {
   color: #FFF;
 }
 
-.dark-mode .wrapper .output-wrapper .basic-info-wrapper .bio {
+.dark-mode .main-wrapper .output-wrapper .basic-info-wrapper .bio {
   color: #FFF;
 }
 
-.dark-mode .wrapper .output-wrapper .stats {
+.dark-mode .main-wrapper .output-wrapper .stats {
   background-color: #141D2F;
 }
 
-.dark-mode .wrapper .output-wrapper .stats .stat {
+.dark-mode .main-wrapper .output-wrapper .stats .stat {
   color: #FFF;
 }
 
-.dark-mode .wrapper .output-wrapper .stats .stat .stat-number {
+.dark-mode .main-wrapper .output-wrapper .stats .stat .stat-number {
   color: #FFF;
 }
 
-.dark-mode .wrapper .output-wrapper .aside-info .info {
+.dark-mode .main-wrapper .output-wrapper .aside-info .info {
   color: #FFF;
 }
 
-.dark-mode .wrapper .output-wrapper .aside-info .info .icon {
+.dark-mode .main-wrapper .output-wrapper .aside-info .info .icon {
   -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(0%) hue-rotate(327deg) brightness(104%) contrast(102%);
           filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(0%) hue-rotate(327deg) brightness(104%) contrast(102%);
 }
@@ -305,7 +305,7 @@ a {
   display: none;
 }
 
-.wrapper {
+.main-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +320,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .wrapper {
+  .main-wrapper {
     width: 90%;
   }
 }
@@ -368,7 +368,7 @@ a {
   color: #FFF;
 }
 
-.top-bar .switch-mode-btn .mode-icon {
+.top-bar .switch-mode-btn .switch-mode-icon {
   margin-left: 10px;
 }
 
@@ -378,12 +378,12 @@ a {
   }
 }
 
-.search {
+.search-form {
   width: 100%;
   position: relative;
 }
 
-.search .username {
+.search-form .username {
   width: 100%;
   height: 69px;
   padding: 15px;
@@ -396,11 +396,11 @@ a {
           box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 }
 
-.search .username:focus {
+.search-form .username:focus {
   outline: none;
 }
 
-.search .search-btn {
+.search-form .search-btn {
   position: absolute;
   right: 10px;
   top: 9.5px;
@@ -414,16 +414,16 @@ a {
   border-radius: 10px;
 }
 
-.search .search-btn:focus {
+.search-form .search-btn:focus {
   outline: none;
 }
 
-.search .search-btn:hover,
-.search .search-btn:focus {
+.search-form .search-btn:hover,
+.search-form .search-btn:focus {
   background-color: #60ABFF;
 }
 
-.search .icon-search {
+.search-form .icon-search {
   position: absolute;
   left: 32px;
   top: 23px;
@@ -431,7 +431,7 @@ a {
   height: 24px;
 }
 
-.search .error-msg {
+.search-form .error-msg {
   position: absolute;
   left: 68.22%;
   right: 19.18%;
@@ -444,25 +444,25 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .search .username {
+  .search-form .username {
     height: 60px;
     font-size: 13px;
     text-align: left;
   }
-  .search .search-btn {
+  .search-form .search-btn {
     top: 7px;
     right: 7px;
     width: 84px;
     height: 46px;
     font-size: 14px;
   }
-  .search .icon-search {
+  .search-form .icon-search {
     display: none;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .search .error-msg {
+  .search-form .error-msg {
     display: none;
   }
 }

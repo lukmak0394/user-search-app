@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     overflow: auto;
@@ -19,7 +18,7 @@ a {
     background-color: $bg-dark;
     color: #FFF;
 
-    .wrapper {
+    .main-wrapper {
 
         .top-bar {
 
@@ -88,7 +87,7 @@ a {
     display: none;
 }
 
-.wrapper {
+.main-wrapper {
     @include flexbox;
     flex-direction: column; 
     max-width: 730px;
@@ -99,4 +98,3 @@ a {
     }
 
 }
-

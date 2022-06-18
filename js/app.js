@@ -1,6 +1,6 @@
 export {createContent}
 
-const searchBtn = document.querySelector('.search-btn');
+const form = document.querySelector('.search-form');
 const username = document.querySelector('.username');
 const errorMsg = document.querySelector('.error-msg');
 const output = document.querySelector('.output-wrapper');
@@ -66,7 +66,8 @@ const getData = () => {
 
 }
 
-searchBtn.addEventListener('click',() => {
+form.addEventListener('submit',(e) => {
+    e.preventDefault()
     if (username.value !== '') {
         preloader();
         setTimeout(getData,2000);

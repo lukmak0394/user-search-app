@@ -12,20 +12,19 @@
   <title>Frontend Mentor | GitHub user search app</title>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="top-bar">
+  <section class="main-wrapper">
+    <header class="top-bar">
       <h1 class="logo">devfinder</h1>
-      <button class="switch-mode-btn">Dark<img src="assets/icon-moon.svg" alt="icon-moon" class="mode-icon"></button>
-    </div>
-    <div class="search">
+      <button class="switch-mode-btn">Dark<img src="assets/icon-moon.svg" alt="icon-moon" class="switch-mode-icon"></button>
+    </header>
+    <form class="search-form">
       <input type="text" name="username" id="username" class="username" placeholder="Find username">
       <img src="assets/icon-search.svg" alt="icon-search" class="icon-search">
       <span class="error-msg no-show">No results</span>
       <button class="search-btn">Search</button>
-    </div>
-    <div class="output-wrapper">
-    </div>      
-  </div>
+    </form>
+    <section class="output-wrapper"></section>      
+  </section>
 
   <script src="js/app.js" type="module"></script>
   <script src="js/main.js" type="module"></script>
