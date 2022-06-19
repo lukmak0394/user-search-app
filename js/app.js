@@ -15,7 +15,7 @@ const createContent = (userData) => {
         <div class="basic-info-wrapper">
             <img src="${userData.avatar_url}" alt="user-avatar" class="avatar">
             <div class="basic-info">
-                <h1 class="login">${userData.name ? userData.name : userData.login}</h1>
+                <p class="login">${userData.name ? userData.name : userData.login}</p>
                 <p class="created-at">Joined at ${new Date(userData.created_at).toLocaleDateString()}</p>
                 <a href="${userData.html_url}" target="_blank" class="user-link">@${userData.login}</a>
             </div>
@@ -27,21 +27,20 @@ const createContent = (userData) => {
             <p class="stat following">Following<br><span class="stat-number">${userData.following}</span></p>
         </div> 
         <div class="social-info-wrapper">
-        <p class="info location">
-          <img src="./assets/icon-location.svg" alt="location-icon" class="icon ${userData.location ? true : 'not-available'}">${userData.location ? userData.location : '<span class="not-available">Not Available</span>'}
-        </p>
-        <a href="https://twitter.com/${userData.twitter_username}" class="info twitter">
-          <img src="./assets/icon-twitter.svg" alt="twitter-icon" class="icon ${userData.twitter_username ? true : 'not-available'}">${userData.twitter_username ? userData.twitter_username : '<span class="not-available">Not Available</span>'}
-        </a>
-        <a href="${userData.blog}" class="info blog">
-          <img src="./assets/icon-website.svg" alt="blog-icon" class="icon ${userData.blog ? true : 'not-available'}"}">${userData.blog ? userData.blog : '<span class="not-available">Not Available</span>'}
-        </a>
-        <p class="info company">
-          <img src="./assets/icon-company.svg" alt="location-company" class="icon ${userData.company ? true : 'not-available'}">${userData.company ? userData.company : '<span class="not-available">Not Available</span>'}
-        </p>
-      </div>
-    </div> 
-        
+            <p class="info location">
+                <img src="./assets/icon-location.svg" alt="location-icon" class="icon ${userData.location ? true : 'not-available'}">${userData.location ? userData.location : '<span class="not-available">Not Available</span>'}
+            </p>
+            <a href="https://twitter.com/${userData.twitter_username}" class="info twitter">
+                <img src="./assets/icon-twitter.svg" alt="twitter-icon" class="icon ${userData.twitter_username ? true : 'not-available'}">${userData.twitter_username ? userData.twitter_username : '<span class="not-available">Not Available</span>'}
+            </a>
+            <a href="${userData.blog}" class="info blog">
+                <img src="./assets/icon-website.svg" alt="blog-icon" class="icon ${userData.blog ? true : 'not-available'}"}">${userData.blog ? userData.blog : '<span class="not-available">Not Available</span>'}
+            </a>
+            <p class="info company">
+                <img src="./assets/icon-company.svg" alt="location-company" class="icon ${userData.company ? true : 'not-available'}">${userData.company ? userData.company : '<span class="not-available">Not Available</span>'}
+            </p>
+        </div>
+    </div>   
     `;
 }
 
